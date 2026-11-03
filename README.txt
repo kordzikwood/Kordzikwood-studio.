@@ -46,3 +46,13 @@ W konstruktorze szafki wybierz tryb ręczny i wpisz oddzielone przecinkami wymia
 5.3.1: naprawa wstawienia skryptu akordeonu wewnatrz szablonu wydruku. Zwijanie tylko panelu ustawien, nie wizualizacji.
 
 5.3.2: NAPRAWA: usunieto niezamierzony znacznik zamkniecia skryptu w szablonie wydruku, ktory zatrzymywal generowanie konstrukcji. Dodano opcjonalny podchwyt z wylacznikiem. Domyslnie wylaczony, takze dla starych projektow. Korytka i podciecia bokow sa nadal schematyczne; nie sa to formatki produkcyjne.
+
+5.4 — Rozbudowa bez zmiany kluczy zapisanych projektów.
+- Przegrody pionowe: formatki i prosty model 3D, układ równy.
+- Szuflady: orientacyjne zestawienie systemu LEGRABOX lub prowadnic; brak geometrii i wymiarów dna/pleców, brak otworowania i weryfikacji katalogowej.
+- GOLA i podchwyty zachowane z 5.3.2 (geometria nadal schematyczna).
+- Kalkulator kosztu i narzutu na koszt, orientacyjne obrzeża frontów i półek, CSV formatek.
+- Cofnij / ponów zmiany formularza (do 60 kroków; historia w pamięci sesji).
+- Kopiowanie zapisanych projektów: zakładka Projekty (funkcja z wcześniejszych wersji).
+UWAGA: nie jest to zatwierdzona dokumentacja produkcyjna, zwłaszcza dla szuflad, obrzeży i GOLA.
+Nie czyść pamięci Safari; eksportuj kopię projektów przed aktualizacją.
