@@ -1,14 +1,22 @@
-KORDZIKWOOD Studio 4.2.2
+KORDZIKWOOD Studio 4.3 — aktualizacja GitHub Pages
 
-INSTALACJA: Rozpakuj ZIP. Wgraj pliki index.html, sw.js, manifest.webmanifest, icon-192.png i icon-512.png bezpośrednio do głównego katalogu istniejącego repozytorium GitHub (gałąź main), zastępując poprzednie pliki. Nie przesyłaj nadrzędnego folderu.
+INSTALACJA: Przed zmianami wykonaj eksport wszystkich projektów z teksturami.
+Rozpakuj ZIP, prześlij pliki z wnętrza folderu (index.html, studio43.js, sw.js,
+manifest.webmanifest i ikony) do katalogu głównego repozytorium GitHub na main.
+Nie usuwaj istniejących projektów ani danych Safari. Poczekaj na publikację Pages.
 
-ZMIANY 4.2.2:
-- Z-buffer na poziomie pikseli: prawidłowe zasłanianie półek, boków i frontów niezależnie od kolejności rysowania.
-- Poprawiony kierunek widoczności górnych powierzchni półek.
-- Ten sam model 3D dla widoku z przodu i izometrii (fronty poziome, własne wysokości półek).
-- Linie wymiarowe szerokości, wysokości i głębokości; przy widoku od przodu etykiety wysokości półek.
-- Aktualizacja cache offline i numeru wersji.
+NOWE: Zestawy złożone z maks. 50 modułów, osobna edycja każdego modułu przez
+istniejący konstruktor 4.2.2, zmiana kolejności, duplikowanie, usuwanie,
+orientacyjna elewacja, wspólny blat szafek dolnych, szkic pomieszczenia
+(prostokąt/L/U), zbiorcze formatki, CSV, eksport zestawu z teksturami,
+import zestawu i import starego pliku pojedynczego projektu 4.x do zestawu.
 
-DANE: Nie zmieniano kluczy zapisanych projektów, struktury danych ani eksportu. Zachowaj kopię zapasową projektów z teksturami przed aktualizacją.
+ZACHOWANIE DANYCH: Stare projekty nadal są w kluczu kwstudio_projects_v3;
+nowe zestawy zapisują się osobno pod kwstudio_sets_v43. Tekstury pozostają
+w tej samej bazie IndexedDB KORDZIKWOOD_TEXTURES.
 
-OGRANICZENIA: Podgląd i formatki nadal wymagają weryfikacji technologicznej przed cięciem. Renderer testowany składniowo, nieprzetestowany w Safari na urządzeniu.
+OGRANICZENIA: Szkic pomieszczenia nie modeluje rzeczywistych narożników,
+przeszkód, drzwi ani kolizji. Wspólny blat jest prostokątnym elementem
+liczonym dla szafek typu dolnego; nie uwzględnia wycięć, łączeń ani przerw
+między szafkami dolnymi. Elewacja jest szkicem 2D, nie pełnym modelem 3D
+całego zestawu. Formatki wymagają weryfikacji przed cięciem.
