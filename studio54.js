@@ -2,7 +2,7 @@
 (function(){
 'use strict';
 const $=id=>document.getElementById(id);
-const ids=['costBoard','costEdge','costHardware','costLabor','costInstall','costMarkup'];
+const ids=['costBoard','costEdge','costHardware','costLabor','costInstall','costMarkup','unitHinge','unitDrawer','unitLeg'];
 const priceKey='kw54_prices_v1';
 const money=n=>Number(n).toLocaleString('pl-PL',{minimumFractionDigits:2,maximumFractionDigits:2})+' zł';
 const n=id=>Number($(id)?.value||0);
@@ -23,17 +23,19 @@ function update(){
  const ok=values.every(v=>Number.isFinite(v)&&v>=0)&&n('costMarkup')<=1000;
  const panel=$('kw54Price');
  if(!ok){panel.textContent='Sprawdź ceny i narzut: wartości muszą być nieujemne, narzut maksymalnie 1000%.';return}
- const board=m.area*n('costBoard'),edges=m.edge*n('costEdge');
- const direct=board+edges+n('costHardware')+n('costLabor')+n('costInstall');
+ const edgeMeters=window.KW55?window.KW55.edgeMeters(parts):m.edge;
+ const autoCost=window.KW55&&$('autoHardware').value==='yes'?window.KW55.hardwareCost():0;
+ const board=m.area*n('costBoard'),edges=edgeMeters*n('costEdge');
+ const direct=board+edges+autoCost+n('costHardware')+n('costLabor')+n('costInstall');
  const quote=direct*(1+n('costMarkup')/100);
- panel.innerHTML=`<b>Powierzchnia:</b> ${m.area.toFixed(3)} m² · <b>obrzeże orient.:</b> ${m.edge.toFixed(2)} mb<br>
- <b>Płyty:</b> ${money(board)} · <b>obrzeża:</b> ${money(edges)}<br>
+ panel.innerHTML=`<b>Powierzchnia:</b> ${m.area.toFixed(3)} m² · <b>obrzeże orient.:</b> ${edgeMeters.toFixed(2)} mb<br>
+ <b>Płyty:</b> ${money(board)} · <b>obrzeża:</b> ${money(edges)} · <b>okucia auto:</b> ${money(autoCost)}<br>
  <b>Koszt razem:</b> ${money(direct)}<br><b>Cena ofertowa (narzut):</b> ${money(quote)}
  <p class="muted">Narzut ≠ marża. Bez VAT, odpadu materiałowego i podatków. Profile GOLA nie są wliczone automatycznie do ceny okuć.</p>`;
  $('kw54Edges').innerHTML='<table><thead><tr><th>Element</th><th>Ilość</th><th>Obrzeże orient.</th></tr></thead><tbody>'+
- parts.filter(x=>x.t>0&&x.l>0&&x.b>0).map(x=>`<tr><td>${safe(x.name)}</td><td>${x.qty}</td><td>${/^(Front|Półka)/.test(x.name)?(2*(x.l+x.b)*x.qty/1000).toFixed(2)+' mb':'do określenia'}</td></tr>`).join('')+'</tbody></table>';
+ parts.filter(x=>x.t>0&&x.l>0&&x.b>0).map(x=>`<tr><td>${safe(x.name)}</td><td>${x.qty}</td><td>${window.KW55?window.KW55.edgeForPart(x).toFixed(2)+' mb':(/^(Front|Półka)/.test(x.name)?(2*(x.l+x.b)*x.qty/1000).toFixed(2)+' mb':'do określenia')}</td></tr>`).join('')+'</tbody></table>';
  const count=n('drawerCount'),length=n('runnerLength'),height=$('drawerSideHeight').value,system=$('drawerSystem').value;
- $('kw54Hardware').innerHTML=count>0?`<b>${count} szuflad</b> — ${safe(system==='blum-legrabox'?'Blum LEGRABOX':'prowadnice ogólne')}, długość nominalna ${length} mm, wariant ${safe(height)}.<br>
+ $('kw54Hardware').innerHTML=count>0?`<b>${count} szuflad</b> — ${safe(system==='sevroll'?'Sevroll':system==='blum-legrabox'?'Blum LEGRABOX':'system ogólny')}, długość nominalna ${length} mm, wariant ${safe(height)}.<br>
  Zestawienie orientacyjne: ${count} par prowadnic, ${count} kompletów boków (jeśli system wymaga), ${count} kompletów mocowań frontów, elementy dna i pleców do osobnego zwymiarowania.<br><b>Uwaga:</b> sprawdź kompatybilność wymiarów i kodów w katalogu producenta.`:'Nie wybrano szuflad.';
 }
 for(const id of ids)$(id).addEventListener('input',()=>{
@@ -79,8 +81,9 @@ $('kw54Export').addEventListener('click',()=>{
  ...parts.map(x=>[x.name,x.qty,x.l,x.b,x.t,x.decor,/(GOLA|zacięcie|frez J)/i.test(x.name)?'Sprawdz technologie i mocowania':'Wymiary orientacyjne'])];
  const csv='\uFEFF'+lines.map(line=>line.map(escapeCsv).join(';')).join('\r\n');
  const blob=new Blob([csv],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
- a.href=url;a.download='KORDZIKWOOD_5_4_formatki.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);
+ a.href=url;a.download='KORDZIKWOOD_5_5_formatki.csv';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),5000);
 });
+window.KW54Update=update;
 document.getElementById('production').addEventListener('click',update);
 update();
 })();

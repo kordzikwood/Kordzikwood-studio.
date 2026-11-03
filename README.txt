@@ -56,3 +56,5 @@ W konstruktorze szafki wybierz tryb ręczny i wpisz oddzielone przecinkami wymia
 - Kopiowanie zapisanych projektów: zakładka Projekty (funkcja z wcześniejszych wersji).
 UWAGA: nie jest to zatwierdzona dokumentacja produkcyjna, zwłaszcza dla szuflad, obrzeży i GOLA.
 Nie czyść pamięci Safari; eksportuj kopię projektów przed aktualizacją.
+
+5.5: Sevroll jako domyslny wybor zawiasow i szuflad. Blum i systemy ogolne alternatywnie. AXILO 48, AXILO 78 lub inne nozki. Orientacyjne ilosci zawiasow, nozek i kompletow szuflad oraz ceny jednostkowe. Krawedzie D1 D2 K1 K2 na grupach formatek, eksport CSV okuc, kopiowanie biezacej szafki. Podglad schematycznych nozek w 3D. Nie sa to zatwierdzone parametry techniczne producentow.
