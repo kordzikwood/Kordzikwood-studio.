@@ -44,3 +44,5 @@ W konstruktorze szafki wybierz tryb ręczny i wpisz oddzielone przecinkami wymia
 5.3: zwijane panele (strzalki), rozwin/zwin wszystko, zapamietywanie ukladu na urzadzeniu. Dane projektow pozostaja bez zmian.
 
 5.3.1: naprawa wstawienia skryptu akordeonu wewnatrz szablonu wydruku. Zwijanie tylko panelu ustawien, nie wizualizacji.
+
+5.3.2: NAPRAWA: usunieto niezamierzony znacznik zamkniecia skryptu w szablonie wydruku, ktory zatrzymywal generowanie konstrukcji. Dodano opcjonalny podchwyt z wylacznikiem. Domyslnie wylaczony, takze dla starych projektow. Korytka i podciecia bokow sa nadal schematyczne; nie sa to formatki produkcyjne.
