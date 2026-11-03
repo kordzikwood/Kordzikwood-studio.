@@ -42,3 +42,5 @@ W konstruktorze szafki wybierz tryb ręczny i wpisz oddzielone przecinkami wymia
 5.2: profile frontow proste / 45 stopni / J, wydluzenie dolne, korytko GOLA aluminium lub formatki (schemat). Produkcyjne wymiary frezowania i mocowania nalezy zweryfikowac.
 
 5.3: zwijane panele (strzalki), rozwin/zwin wszystko, zapamietywanie ukladu na urzadzeniu. Dane projektow pozostaja bez zmian.
+
+5.3.1: naprawa wstawienia skryptu akordeonu wewnatrz szablonu wydruku. Zwijanie tylko panelu ustawien, nie wizualizacji.
