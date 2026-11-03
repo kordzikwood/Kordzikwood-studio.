@@ -1,8 +1,4 @@
-KORDZIKWOOD Studio 4.0 — aktualizacja PWA
-
-Wgraj zawartość katalogu do głównego katalogu repozytorium GitHub Pages.
-Nie usuwaj danych aplikacji przed wykonaniem kopii projektów.
-Nowe: eksport pojedynczych projektów z przypisanymi teksturami, pełna kopia projektów z teksturami, import tych plików jako kopii bez nadpisywania istniejących tekstur.
-Stary eksport JSON v3 jest nadal obsługiwany.
-Limit tekstur w eksporcie 18 MB; limit pliku importowanego 35 MB.
-To prototyp, nie narzędzie CNC. Zweryfikuj formatki przed produkcją.
+KORDZIKWOOD Studio 4.1 — aktualizacja GitHub Pages.
+Nowe: obrotowy podgląd 3D na canvas (gesty palcem, zoom), opcjonalny blat 38 mm z regulacją i dekorami, filtrowanie dekorów po kodzie/nazwie przy każdym elemencie.
+Nie jest to precyzyjny CAD: mapowanie tekstur na ściany jest poglądowe, wymiary i formatki wymagają sprawdzenia przed produkcją.
+Przed aktualizacją wykonaj eksport projektów z teksturami. Wgraj pliki do głównego katalogu repozytorium GitHub Pages.
