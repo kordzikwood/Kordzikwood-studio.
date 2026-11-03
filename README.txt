@@ -58,3 +58,5 @@ UWAGA: nie jest to zatwierdzona dokumentacja produkcyjna, zwłaszcza dla szuflad
 Nie czyść pamięci Safari; eksportuj kopię projektów przed aktualizacją.
 
 5.5: Sevroll jako domyslny wybor zawiasow i szuflad. Blum i systemy ogolne alternatywnie. AXILO 48, AXILO 78 lub inne nozki. Orientacyjne ilosci zawiasow, nozek i kompletow szuflad oraz ceny jednostkowe. Krawedzie D1 D2 K1 K2 na grupach formatek, eksport CSV okuc, kopiowanie biezacej szafki. Podglad schematycznych nozek w 3D. Nie sa to zatwierdzone parametry techniczne producentow.
+
+5.6: Konstruktor skrzynek szuflad na podstawie ręcznie określonych luzów, schemat 2D i schematyczny podgląd 3D; konfigurator drzwi przesuwnych Sevroll (wzór zakładkowy, nie zweryfikowany katalogowo), rzędowy rozkrój grupowany po dekorze/grubości, nawierty z ręcznym szablonem i CSV. Brak generowania kodu CNC/DXF. Dane 5.6 zapisują się jako ustawienia lokalne przeglądarki, niezależne od projektów 5.5. Wymiary szuflad i skrzydeł Sevroll/Blum są przykładowymi wzorami warsztatowymi; wymagają weryfikacji z dokumentacją konkretnego systemu.

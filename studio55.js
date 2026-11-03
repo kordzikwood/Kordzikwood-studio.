@@ -25,7 +25,7 @@ edgeUI.addEventListener('change',e=>{
  render();
 });
 function hingeCount(){
- if($('hingeMode').value==='none'||$('doorUse').value!=='hinged')return 0;
+ if((window.KW56&&window.KW56.slidingOn())||$('hingeMode').value==='none'||$('doorUse').value!=='hinged')return 0;
  const fronts=num('front'),h=num('h'),mode=$('hingeMode').value;
  if(fronts<=0)return 0;
  const per=mode==='manual'?num('hingesPerFront'):h<=900?2:h<=1600?3:h<=2200?4:5;
