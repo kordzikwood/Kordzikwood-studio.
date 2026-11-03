@@ -34,3 +34,7 @@ ZALECANE TESTY
 5. Otwórz 3D; sprawdź zgodność rozmieszczenia brył.
 6. Zmień ceny, sprawdź koszt i eksport CSV.
 7. Wyeksportuj .kwd, zaimportuj kopię i sprawdź pozycje i otwory.
+
+
+WERSJA 5.1 — RĘCZNY PODZIAŁ FRONTÓW
+W konstruktorze szafki wybierz tryb ręczny i wpisz oddzielone przecinkami wymiary frontów. Dla pionowego podziału są to szerokości, dla poziomego wysokości. Suma musi być równa dostępnemu wymiarowi po odjęciu szczelin (liczba frontów + 1). Każdy front trafia jako osobna formatka do CSV pojedynczej szafki i zestawu. Projekty bez tych pól zachowują tryb automatyczny. Wymiary i okucia zweryfikuj przed produkcją.
