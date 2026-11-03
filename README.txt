@@ -1,10 +1,11 @@
-KORDZIKWOOD Studio 3.1 — aktualizacja
+KORDZIKWOOD Studio 3.2 — hurtowy import dekorów
 
-1. Zrób kopię projektów w aktualnej aplikacji przed aktualizacją.
-2. Wgraj pliki z tej paczki do katalogu głównego repozytorium GitHub (nadpisz istniejące).
-3. Po publikacji odśwież aplikację przy dostępie do internetu.
-4. W Dekory importuj CSV code;name;collection;color.
-5. Dodaj teksturę JPG/PNG/WebP osobno do kodu dekoru. Tekstury są zapisane lokalnie w IndexedDB i nie przenoszą się między urządzeniami przez .kwd.
-6. Korpus, front, półki, plecy, blat mają niezależne selektory; blat jest tylko metadanymi, nie formatką.
-7. To prototyp. Nie wykonuj produkcji bez sprawdzenia technologii, wymiarów i okuć.
-8. Nie dodano oficjalnych zdjęć Kronospan. Importuj tylko pliki, których możesz legalnie używać.
+Wgraj pliki do głównego katalogu repozytorium GitHub Pages, zastępując stare.
+Przed aktualizacją wyeksportuj projekty.
+Zakładka Dekory: Import paczek ZIP lub Import wielu zdjęć.
+ZIP musi zawierać JPG/PNG/WebP, nazwy plików z kodami np. K003, 7045SU.
+Nie wszystkie archiwa ZIP są obsługiwane przez Safari; wówczas rozpakuj ZIP w aplikacji Pliki i importuj zdjęcia.
+Nazwy i przypisania kodów należy zweryfikować z katalogiem Kronospan.
+Obrazy są skalowane do 1024 px i zapisywane lokalnie w IndexedDB.
+Brak automatycznego przenoszenia tekstur na inne urządzenie.
+Nie jest to zweryfikowane narzędzie produkcyjne CNC.
