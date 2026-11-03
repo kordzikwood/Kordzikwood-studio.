@@ -218,4 +218,4 @@ $('addModule').onclick=()=>{if(!calc().length)return alert('Najpierw popraw para
 $('clearModules').onclick=()=>{if(confirm('Wyczyścić szkic układu szafek?')){modules42=[];persist(MODULE_KEY,modules42);renderModules42()}};
 $('moduleLayout').onclick=e=>{let b=e.target.closest('button[data-remove-module]');if(!b)return;modules42.splice(Number(b.dataset.removeModule),1);persist(MODULE_KEY,modules42);renderModules42()};renderModules42();
 for(let id of ['exploded','showDimensions'])$(id).addEventListener('change',render);
-</script><script src="./studio43.js"></script><script src="./studio50.js?v=502-interactive"></script></body></html>
+</script><script src="./studio43.js"></script><script src="./studio50.js?v=504-snap-collision"></script></body></html>
