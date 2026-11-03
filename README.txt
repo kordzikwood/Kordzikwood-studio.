@@ -40,3 +40,5 @@ WERSJA 5.1 — RĘCZNY PODZIAŁ FRONTÓW
 W konstruktorze szafki wybierz tryb ręczny i wpisz oddzielone przecinkami wymiary frontów. Dla pionowego podziału są to szerokości, dla poziomego wysokości. Suma musi być równa dostępnemu wymiarowi po odjęciu szczelin (liczba frontów + 1). Każdy front trafia jako osobna formatka do CSV pojedynczej szafki i zestawu. Projekty bez tych pól zachowują tryb automatyczny. Wymiary i okucia zweryfikuj przed produkcją.
 
 5.2: profile frontow proste / 45 stopni / J, wydluzenie dolne, korytko GOLA aluminium lub formatki (schemat). Produkcyjne wymiary frezowania i mocowania nalezy zweryfikowac.
+
+5.3: zwijane panele (strzalki), rozwin/zwin wszystko, zapamietywanie ukladu na urzadzeniu. Dane projektow pozostaja bez zmian.
