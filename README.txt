@@ -1,3 +1,4 @@
-KORDZIKWOOD Studio 6.0.4 — poprawka kadrowania 3D. Automatyczne dopasowanie brył do obszaru widoku, przybliżanie, oddalanie, dopasowanie, pinch i kółko myszy. Wgraj pliki do katalogu głównego GitHub Pages. Zrób kopię projektów przed aktualizacją.
-
-6.0.5: Korekta kolejności rysowania brył 3D: zamknięte fronty zasłaniają półki, otwarte regały mają półki wewnątrz korpusu. Schemat 3D, nie model CAD.
+KORDZIKWOOD Studio 6.0.6 — naprawa brył 3D i sterowania kamerą.
+1 palec: obrót; 2 palce: przesuwanie i zoom; dotknięcie: zaznacz.
+Model 3D jest poglądowy, nie stanowi dokumentacji produkcyjnej.
+Wgraj wszystkie pliki do katalogu głównego GitHub Pages.
