@@ -70,3 +70,14 @@ KORDZIKWOOD Studio 5.7 — NOWE
 - Zachowane pliki i funkcje 5.6; nie zmieniono klucza starej bazy projektow.
 - Przed instalacja eksportuj kopie wszystkich projektow i zlecen. Po instalacji sprawdz nowe funkcje na iPhone Safari.
 OGRANICZENIA: Nie jest to gotowy program CNC. Modele okuć nie sa zweryfikowane katalogowo. Dodatkowe przegrody nie uwzgledniaja kolizji z polkami, szufladami i okuciami; trzeba je sprawdzic recznie.
+
+KORDZIKWOOD Studio 5.8 — Kuchnia PRO
+- Nowa zakładka: Kuchnia PRO 5.8. Parametryczne rzuty z góry narożników: ślepy, L z łamanym frontem, trapez 45°, pojedynczy front, asymetryczny, otwarty, obrotowy, wysuwny i pod zlew. Warianty wiszące dla konstrukcji, które mają zastosowanie; obrotowy/wysuwny/pod zlew ograniczone do dolnych.
+- Wymiary ramion, wysokość, głębokość, płyta, półki, szczelina, blenda, lustro; schemat 2D i orientacyjna lista formatek.
+- AGD i słupki: formatki obudowy i półek nośnych, z kontrolą wielkości wnęki; nie jest to automatyczne dobranie wymiarów producenta urządzenia.
+- Wnętrza: dodatkowe półki, przegrody i schematyczne skrzynki szuflad. Uwaga: bez pełnej analizy kolizji i łączeń.
+- Blat i cokół jako obwiednie, z wymiarami i zestawieniem; dla narożników NIE są gotowymi formatkami do cięcia. LED: długość, moc i rezerwa zasilacza.
+- Kopiowanie i lustrzane odbicie narożników, własne szablony i biblioteka nazw/cen materiałów; zestawienie CSV łączy obecny konstruktor 5.7 z modułami 5.8, JSON backup/import modułów 5.8.
+- Pozostałe funkcje 5.7 zachowane bez zmiany kluczy zapisu. Dane modułów 5.8 przechowywane są oddzielnie w localStorage.
+- OGRANICZENIA: różne rodzaje narożników nie mają jeszcze kompletnych cięć skośnych, podcięć i zweryfikowanych wymiarów pod okucia. Nie są gotową dokumentacją CNC. Blaty L, U, blendy automatyczne, pełne 3D narożników i wspólne rozmieszczenie w pomieszczeniu wymagają dalszej rozbudowy. Rozkrój 5.6 nie pobiera automatycznie narożników 5.8; użyj wspólnego eksportu CSV.
+- Testy: składnia JS, logika 15 obsługiwanych kombinacji narożników dolnych/górnych, obliczenia AGD, spójność ZIP. Test przeglądarkowy Chromium/Safari nie został wykonany z powodu blokady uruchamiania stron w środowisku testowym. Sprawdź na kopii projektu przed produkcją.
