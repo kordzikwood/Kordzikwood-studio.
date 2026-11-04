@@ -1,0 +1,27 @@
+/* KORDZIKWOOD 6.0.3: quiet, touch-first modern workspace */
+:root{--kw603-accent:#e0b66c;--kw603-line:#405155;--kw603-focus:#f1c879}
+body>nav{display:none!important}
+.kw59-top{display:flex!important;gap:10px;align-items:center;flex-wrap:wrap;background:#141e21;border-bottom:1px solid #364448}
+.kw603-brand{font-size:15px;letter-spacing:.15px;margin-right:auto;color:#f1f1ed}
+.kw59-top button{min-height:42px;border-radius:11px}
+.kw602-shell{padding:10px 12px;background:#182225}
+.kw602-heading{margin-bottom:8px}.kw602-heading strong{font-size:15px}.kw602-heading #kw602Hint{font-size:12px}
+.kw603-crumb{display:none}
+.kw602-primary button,.kw602-more button{border-radius:11px;min-height:44px;font-weight:600;white-space:nowrap}
+.kw602-more summary{min-height:42px;font-size:13px}
+.kw602-bottom{gap:2px}.kw602-bottom button{border-radius:12px;min-height:58px}.kw602-bottom button svg{display:block}.kw602-bottom button small{font-size:11px;letter-spacing:.1px}
+#full60 .fp-head{gap:10px;align-items:center}#full60 .fp-head h2{font-size:20px;letter-spacing:-.35px}#full60 .fp-head p{font-size:12px}
+#full60 .fp-scene,#full60 .fp-panels{min-width:0}
+#full60 .fp-toolbar{display:flex;flex-wrap:wrap;gap:7px}#full60 .fp-toolbar button,#full60 .fp-actions button{min-height:44px;border-radius:10px}
+#full60 .fp-panels>details{border:1px solid var(--kw603-line);border-radius:12px;margin:9px 0;overflow:hidden}
+#full60 .fp-panels>details:not([open]){display:none}
+#full60 .fp-panels>details>summary{padding:12px 14px;font-weight:700;cursor:pointer}
+#full60 .fp-panels>details.kw603-current{border-color:#92764a}
+.kw603-steps{display:flex;gap:6px;overflow-x:auto;scrollbar-width:thin;padding:4px 0 8px;scroll-snap-type:x proximity}
+.kw603-steps button{flex:0 0 auto;scroll-snap-align:start;border:1px solid #526165;border-radius:999px;padding:10px 12px;min-height:44px;background:#202b2e;color:#d7dfe0;font-size:12px;font-weight:600}
+.kw603-steps button.kw603-active{background:#73572f;border-color:#e0b66c;color:#fff}
+#full60 input,#full60 select{min-height:43px;border-radius:9px}
+:focus-visible{outline:3px solid var(--kw603-focus)!important;outline-offset:2px}
+@media(max-width:850px){#full60 .fp-head{flex-direction:column;align-items:stretch}#full60 .fp-actions{display:flex;flex-wrap:wrap}#full60 .fp-layout{display:flex;flex-direction:column}#full60 .fp-scene{order:0}#full60 .fp-panels{order:1;scroll-margin-top:10px}#full60 #fpSvg{width:100%;height:auto;max-height:60vh;touch-action:none}.kw602-bottom{padding-bottom:calc(5px + env(safe-area-inset-bottom))}}
+@media(min-width:851px){.kw602-bottom{position:sticky;top:0;z-index:90;justify-content:flex-start}.kw602-bottom button{min-width:130px}.kw602-shell{padding:12px 22px}.kw602-primary{flex-wrap:wrap}.kw603-steps{flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
