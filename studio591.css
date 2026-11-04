@@ -1,0 +1,11 @@
+/* Smart UI 5.9.1 */
+.kw591-tools{display:flex;gap:7px;padding:7px 10px;overflow:auto;background:#172125;border-bottom:1px solid #34474b}
+.kw591-tools button,.kw591-context button,.kw591-panel button{min-height:42px;flex:0 0 auto;margin:0;padding:8px 11px;font-size:12px}
+.kw591-context{display:flex;gap:7px;padding:6px 10px;overflow:auto;background:#19282b}.kw591-context[hidden]{display:none}
+.kw591-context button{border-radius:999px;background:#2a383b;color:#e0e6e5}
+.kw591-panel{padding:12px;background:#1b282b;border-bottom:1px solid #425458;display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:8px}
+.kw591-panel[hidden]{display:none}.kw591-panel-head{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between}
+.kw591-favrow{display:flex;gap:3px;min-width:0}.kw591-favrow button:first-child{flex:1;min-width:0;white-space:normal}.kw591-favrow button:last-child{font-size:20px}
+.kw591-compact .kw53-section:not([open]){margin:6px 0}.kw591-compact .kw53-section:not([open])>summary{padding:9px 11px}
+.kw591-compact .tab.active-tab .card{margin-bottom:10px}
+@media(max-width:550px){.kw591-tools button{min-height:44px}.kw591-context{scrollbar-width:none}.kw591-panel{grid-template-columns:1fr 1fr}}
