@@ -1,3 +1,4 @@
-KORDZIKWOOD Studio 6.0.7
-Zmiany: kamera widok z góry (90 stopni), izometria, pelny zakres pochylenia kamery; osobny blat z regulowanymi naddatkami, poprawne formatki i wycena blatu.
-Wgraj wszystkie pliki do katalogu glownego GitHub Pages. Projekty lokalne zachowane.
+KORDZIKWOOD Studio 6.0.8 — Formatki 2D
+Nowość: wybór formatki z aktualnego projektu, rysunek 2D z wymiarami, ilością i materiałem, eksport SVG. Wymiary pochodzą z tej samej listy co CSV.
+UWAGA: To rysunek poglądowy bez nawiertów, kierunku usłojenia, rozkroju i zweryfikowanych okuć. Nie jest dokumentacją CNC.
+Wgraj zawartość ZIP do głównego katalogu GitHub Pages, zastępując poprzednie pliki.
