@@ -1,4 +1,3 @@
-KORDZIKWOOD Studio 6.0.6 — naprawa brył 3D i sterowania kamerą.
-1 palec: obrót; 2 palce: przesuwanie i zoom; dotknięcie: zaznacz.
-Model 3D jest poglądowy, nie stanowi dokumentacji produkcyjnej.
-Wgraj wszystkie pliki do katalogu głównego GitHub Pages.
+KORDZIKWOOD Studio 6.0.7
+Zmiany: kamera widok z góry (90 stopni), izometria, pelny zakres pochylenia kamery; osobny blat z regulowanymi naddatkami, poprawne formatki i wycena blatu.
+Wgraj wszystkie pliki do katalogu glownego GitHub Pages. Projekty lokalne zachowane.
