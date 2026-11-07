@@ -3,3 +3,5 @@
 .fp-top-decor{grid-column:1/-1;display:grid;gap:8px;padding:12px;border:1px solid #8885;border-radius:12px}.fp-top-decor select{width:100%;max-width:100%;min-width:0}.fp-top-info{font-size:12px;opacity:.85;margin:0}.fp-top-preview{min-height:65px;border:1px dashed #8887;border-radius:8px;background-position:center;background-size:cover;background-repeat:repeat}
 
 #fpSvg{touch-action:pan-y;} .fp-actions button{min-height:42px} #fpZoomIn,#fpZoomOut,#fpFit{font-size:15px} 
+
+.fp-edge-settings{border:1px solid #657075;border-radius:10px;padding:12px;margin:12px 0;background:#222c2f}.fp-edge-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0}.fp-edge-grid label{font-size:13px;display:flex;gap:6px;align-items:center}.fp-edge-grid input{width:auto}.fp-edge-settings select{width:100%;padding:8px;background:#1b2427;color:#fff;border-radius:6px}@media(max-width:450px){.fp-edge-grid{grid-template-columns:1fr}}

@@ -1,4 +1,1 @@
-KORDZIKWOOD Studio 6.0.8 — Formatki 2D
-Nowość: wybór formatki z aktualnego projektu, rysunek 2D z wymiarami, ilością i materiałem, eksport SVG. Wymiary pochodzą z tej samej listy co CSV.
-UWAGA: To rysunek poglądowy bez nawiertów, kierunku usłojenia, rozkroju i zweryfikowanych okuć. Nie jest dokumentacją CNC.
-Wgraj zawartość ZIP do głównego katalogu GitHub Pages, zastępując poprzednie pliki.
+KORDZIKWOOD Studio 6.0.9 — ręczne oznaczanie obrzeży A/B/C/D, grubość 0,4/0,8/1/2 mm, podgląd SVG i CSV. Dane zapisywane w projekcie FULL PRO. Wymiary netto i szacunkowa wycena nie są przeliczane z ręcznego planu. Wgraj wszystkie pliki do katalogu głównego GitHub Pages.
